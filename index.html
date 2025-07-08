@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FakeStore Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg px-4 py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">🛒 LuxeStore</a>
+            <form class="d-flex w-50 mx-auto">
+                <input oninput="searchProduct()" id="searchBar" class="form-control search-bar me-2" type="search"
+                    placeholder="Search products..." />
+            </form>
+            <div class="icon-div">
+                <a href="#" class="cart-icon">
+                    <i onclick="openCart()" class="fas fa-shopping-cart"></i>
+                </a>
+
+                <p id="cartCounter">0</p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="container-fluid mt-5 px-4">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <h5>Categories</h5>
+
+                    <div class="category-item"><i class="fas fa-th-large"></i><span> All</span></div>
+                    <div onclick="displayByCategory(this)"  class="category-item"><i class="fas fa-plug"></i><span class="category"> Electronics</span></div>
+                    <div onclick="displayByCategory(this)"  class="category-item"><i class="fas fa-gem"></i><span class="category"> Jewelery</span></div>
+                    <div onclick="displayByCategory(this)"  class="category-item"><i class="fas fa-mars"></i><span class="category"> Men's Clothing</span></div>
+                    <div onclick="displayByCategory(this)"  class="category-item"><i class="fas fa-venus"></i><span class="category"> Women's Clothing</span></div>
+                </div>
+
+            </div>
+
+            <!-- Products Grid -->
+            <div class="col-md-9">
+                <div class="row g-4 product-grid">
+                    <!-- Product 1 -->
+
+
+                    <!-- Add more product cards here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cartSideBar min-vh-100">
+        <button onclick="closeCart()" id="closeBtn">X</button>
+        <h5>Your Cart: <span id="totalPrice">$0.00</span></h5>
+
+        <a href="checkout.html"><button id="checkoutBtn">Checkout</button></a>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
