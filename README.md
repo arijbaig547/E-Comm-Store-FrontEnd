@@ -1,24 +1,23 @@
-🛒 FakeAPI Frontend Store
-
+🛒 FakeStore Frontend Store
 A clean frontend e-commerce store built using the FakeStore API.
 Users can browse products, filter by categories, and view details.
 
 🚀 Features
-📦 Dynamic Products: Data fetched from FakeStore API
+Dynamic Products: Data fetched from FakeStore API
 
-🖼️ Product Cards: Show image, title, price & description
+Product Cards: Show image, title, price & description
 
-🏷️ Category Filter: Easily filter products
+Category Filter: Easily filter products
 
-💻 Responsive Design: Works on mobile & desktop
+Responsive Design: Works on mobile & desktop
 
-⚡ Pure Vanilla JavaScript: No frameworks
+Pure Vanilla JavaScript: No frameworks
 
 🌐 Live Demo
-👉 Click here to view the live project
+👉 View the live project here
 
-📷 Screenshots
-(screenshot.png)
+📷 Screenshots(screenshot.png)
+
 
 🛠️ Tech Stack
 HTML5 – Structure
@@ -29,16 +28,16 @@ JavaScript (ES6) – Functionality
 
 FakeStore API – Product data
 
-
 🌐 API Used
-GET /products → Fetch all products
+GET /products – Fetch all products
 
-GET /products/categories → Fetch product categories
+GET /products/categories – Fetch product categories
 
-More info at FakeStore API.
+More details: FakeStore API Docs
 
 🤝 Contributing
-Contributions are welcome! Please open an issue first for discussion.
+Contributions are welcome!
+Please open an issue first to discuss what you'd like to change.
 
 📝 License
 This project is open-source and available under the MIT License.
