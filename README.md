@@ -16,7 +16,9 @@ Pure Vanilla JavaScript: No frameworks
 🌐 Live Demo
 👉 View the live project here
 
-📷 Screenshots(screenshot.png)
+## 📷 Screenshots
+
+![App Screenshot](screenshot.png)
 
 
 🛠️ Tech Stack
