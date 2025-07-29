@@ -111,6 +111,14 @@ body {
   background: #ffffff;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-in-out;
+  height: 300px;
+}
+.qtBtns button{
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  font-weight: 800;
+  border: none;
 }
 
 .card:hover {

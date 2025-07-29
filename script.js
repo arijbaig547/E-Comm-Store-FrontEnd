@@ -20,6 +20,7 @@ function displayProducts() {
                 <div style="max-width: 75%;">
                   <h6 class="card-title mb-1" style="font-size: 0.95rem;">${product.title.slice(0, 40)}...</h6>
                   <p class="text-muted mb-0">$${product.price}</p>
+                  
                 </div>
                 <button onclick="displayIteminCart(this)"class="btn btn-add">+</button>
               </div>
@@ -98,7 +99,12 @@ function displayIteminCart(e) {
       <div class="text d-flex flex-column">
         <h6>Title: ${itemObj.title}</h6>
         <p>Price: $${itemObj.price}</p>
-        <button onclick="removeItem(this)" id="removebtn">Remove</button>
+        <small>Quantity:1</small>
+        <div class="d-flex qtBtns mt-2">
+        <button>-</button>
+        <button onclick="incQuantity(this)">+</button>
+        </div>
+        <button class="mt-1" onclick="removeItem(this)" id="removebtn">Remove</button>
       </div>
     </div>
   `;
@@ -171,6 +177,12 @@ function displayByCategory(clickedDiv) {
     });
 }
 
+function incQuantity(e) {
+  const item = e.closest(".text");
+  const quantityText = item.querySelector("small").innerText; // Get text
+  const quantity = quantityText.split(":")[1]; // Split and get the number
+  console.log(quantity);
+}
 
 
 
