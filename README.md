@@ -14,7 +14,7 @@ Responsive Design: Works on mobile & desktop
 Pure Vanilla JavaScript: No frameworks
 
 🌐 Live Demo
-👉 View the live project here
+👉 View the live project here:https://stirring-pixie-2d6de9.netlify.app/
 
 ## 📷 Screenshots
 
